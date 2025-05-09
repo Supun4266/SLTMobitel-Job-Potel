@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLT Mobitel - Training Program Application</title>
+    <link rel="stylesheet" href="/cssfiles/vacancy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="/photos/mobitel.png" alt="SLT Mobitel Logo" class="logo">
+                <span class="program-title">Training Program</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Job status</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="#">Apply for job</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="#">Jobs for you</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="#">Home</a></li>
+                    <li class="separator">|</li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="application-container">
+            <form class="application-form">
+                <div class="form-row">
+                    <label for="job-title">Job Title</label>
+                    <span class="colon">:</span>
+                    <div class="input-field job-title">Web Development Trainee</div>
+                </div>
+
+                <div class="form-row">
+                    <label for="name-initials">Name with Initials</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="name-initials" class="input-field">
+                </div>
+
+                <div class="form-row">
+                    <label for="full-name">Full Name</label>
+                    <span class="colon">:</span>
+                    <input type="text" id="full-name" class="input-field">
+                </div>
+
+                <div class="form-row">
+                    <label for="gender">Gender</label>
+                    <span class="colon">:</span>
+                    <div class="select-wrapper">
+                        <select id="gender" class="input-field">
+                            <option value="" selected disabled>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="birth-date">Date of Birth</label>
+                    <span class="colon">:</span>
+                    <div class="date-input-wrapper">
+                        <input type="text" id="birth-date" class="input-field date-input" placeholder="DD/MM/YYYY">
+                        <span class="calendar-icon"><i class="far fa-calendar"></i></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <span class="colon">:</span>
+                    <input type="email" id="email" class="input-field">
+                </div>
+
+                <div class="form-row">
+                    <label for="contact">Contact Number</label>
+                    <span class="colon">:</span>
+                    <input type="tel" id="contact" class="input-field">
+                </div>
+
+                <div class="form-row">
+                    <label for="field">Field</label>
+                    <span class="colon">:</span>
+                    <div class="select-wrapper">
+                        <select id="field" class="input-field">
+                            <option value="" selected disabled>Select field</option>
+                            <option value="it">Information Technology</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="business">Business</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row upload-section">
+                    <label for="cv-upload">Upload your CV here</label>
+                </div>
+
+                <div class="dropzone">
+                    <div class="dropzone-content">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <p class="dropzone-text">Drag&Drop files here</p>
+                        <p class="or-text">or</p>
+                        <button type="button" class="browse-btn">Browse Files</button>
+                        <input type="file" id="cv-upload" hidden>
+                    </div>
+                </div>
+
+                <div class="submit-row">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
