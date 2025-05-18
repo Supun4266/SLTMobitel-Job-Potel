@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLT Mobitel Training Program</title>
+    <link rel="stylesheet" href="/cssfiles/jobmodification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <img src="/photos/mobitel.png" alt="SLT Mobitel Logo">
+                <h1>Training Program</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/htmlpages/home.html">Home</a>
+                <a href="/htmlpages/login.html">Logout</a>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <div class="triangle"></div>
+                            <span>Job Creation</span>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="menu-item">
+                            <div class="triangle"></div>
+                            <span>Job Modification</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="triangle"></div>
+                            <span>Received CVs</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="triangle"></div>
+                            <span>Accepted CVs</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="content">
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>Job Field</th>
+                            <th>Created Date</th>
+                            <th>Status</th>
+                            <th>Modification</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IT</td>
+                            <td>QA Trainee</td>
+                            <td>2023/10/14</td>
+                            <td class="rejected">Rejected</td>
+                            <td class="actions">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HR</td>
+                            <td>HR Trainee</td>
+                            <td>2023/09/11</td>
+                            <td class="accepted">Accepted</td>
+                            <td class="actions">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Finance</td>
+                            <td>Accountant</td>
+                            <td>2023/08/16</td>
+                            <td class="rejected">Rejected</td>
+                            <td class="actions">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IT</td>
+                            <td>Web Developer</td>
+                            <td>2023/08/02</td>
+                            <td class="accepted">Accepted</td>
+                            <td class="actions">
+                                <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
